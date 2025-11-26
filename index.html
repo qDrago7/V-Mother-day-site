@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>С Днем Матери!</title>
+    
+
+    
+    <img src="img/logo (1).svg" class="logoz" alt="x">
+    <img src="img/logo (1).svg" class=" logozz" alt="f">
+    <div class="container">
+        <h1>Любимой Мамочке!</h1>
+        
+        <div class="heart">❤</div>
+        
+        <div class="photo-frame">
+            <!--фото  мамы -->
+            <img src="img/IMG_20251121_102856.jpg" alt="Фото мамы">
+        </div>
+        
+        <div class="message">
+            <p>Дорогая мама! В этот особенный день я хочу сказать тебе, как сильно я тебя люблю! Ты — самый дорогой человек в моей жизни, моя опора и вдохновение.</p>
+            
+            <p>Спасибо за твою бесконечную заботу, терпение и поддержку. За теплые объятия, которые лечат любую боль. За мудрые советы, которые помогают в трудную минуту.</p>
+        </div>
+        
+        <div class="poem">
+            <p>Мама — это самый лучший друг,<br>
+            Не предаст, не бросит вдруг.<br>
+            Мама — это лучик света,<br>
+            Мама — значит в жизни это!</p>
+            
+            <p>Будь всегда ты счастлива,<br>
+            Здорова, весела, красива!<br>
+            Останься навсегда такой —<br>
+            Самой любимой и родной!</p>
+        </div>
+        
+        <div class="flowers">🌹🌸💐🌺🌷</div>
+        
+        <div class="signature">
+            С любовью, твой ребенок ❤
+        </div>
+    </div>
+
+    <div class="rtpp">
+        <p>С днем мамы</p>
+    </div>
+
+    <script>
+    
+        document.addEventListener('click', function(e) {
+            const heart = document.createElement('div');
+            heart.innerHTML = '❤';
+            heart.style.position = 'fixed';
+            heart.style.left = e.clientX + 'px';
+            heart.style.top = e.clientY + 'px';
+            heart.style.fontSize = '25px';
+            heart.style.color = '#ff1493';
+            heart.style.pointerEvents = 'none';
+            heart.style.animation = 'float 2s ease-out forwards';
+            
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                heart.remove();
+            }, 2000);
+        });
+    </script>
+
+    <div class="grupa">
+    <p>Группа П-11, П-19</p>
+</div>
+
+    <div class="stydi">
+        <footer>
+            <p>Сделано студентами</p>
+            &copy;2025
+        </footer>
+    </div>
+</body>
+</html>

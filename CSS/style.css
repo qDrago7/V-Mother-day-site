@@ -1,0 +1,178 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ffb6c1, #ff69b4, #ff1493);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            
+        }
+
+        header{
+            flex-shrink: 0;
+            padding: 10px;
+            height: 200px;
+            width: 200px;
+        }
+
+        main{
+         
+            flex-grow: 1;
+            overflow: auto;
+            padding: 20px;
+        }
+
+        footer{
+            flex-shrink: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #d5006d;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .heart {
+            color: #ff1493;
+            font-size: 2em;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .logox{
+            margin-bottom: 1100px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 2500px;
+        }
+
+        .logoz{
+            margin-top: 1100px;
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            right: 900px;
+        }
+
+        .grupa{
+            margin-top: 1;
+            position: absolute;
+            top: 1030px;
+            right: 150px;
+        }
+
+        .stydi{
+            margin-top: 1;
+            position: absolute;
+            top: 1023px;
+            left: 150px;
+        }
+
+        .logozz{
+            margin-top: 1;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            bottom: 800px;
+            left: 150px;
+        }
+        
+        .rtpp{
+             margin-top: 1;
+            position: absolute;
+            bottom: 880px;
+            right: 150px;
+        }
+
+        .message {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .poem {
+            font-style: italic;
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 182, 193, 0.2);
+            border-radius: 10px;
+            border-left: 4px solid #ff69b4;
+        }
+
+        .photo-frame {
+            width: 200px;
+            height: 200px;
+            border: 8px solid #ff69b4;
+            border-radius: 50%;
+            margin: 20px auto;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-weight: bold;
+            color: #d5006d;
+            font-size: 1.3em;
+        }
+
+        .flowers {
+            font-size: 2em;
+            margin: 10px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .message {
+                font-size: 1em;
+            }
+        }
